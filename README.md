@@ -322,6 +322,8 @@ SSH2Stream methods
 
     * **server** - _boolean_ - Set to `true` to create an instance in server mode. **Default:** `false`
 
+    * **hostKeyTypes** - (Client-only) _array_ - A list of server host key types that the client accepts.  **Default:** `['ssh-rsa', 'ssh-dss']`
+
     * **privateKey** - _mixed_ - If in server mode, a _Buffer_, _string_ or _object_ that contains the **required** host private key or keys (OpenSSH format).
 For configuring a single host key any of the methods can be used.
 For configuring multiple keys for different algorithms use the _object_ type with _object_ property names corresponding to the algorithm names.**Default:** (none)
